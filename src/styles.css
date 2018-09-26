@@ -57,6 +57,13 @@ body {
 .font-bold {
     font-weight: 700;
 }
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
 .displayDiv {
     display: block;
     max-width: 1024px;
@@ -89,4 +96,15 @@ body {
     display: block;
     width: 500px;
     margin: 0 auto;
+}
+.services-section {
+    margin: 20px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+.radio-box {
+    width: 300px;
+    float: left;
+    margin: 0 10px 20px;
+    text-align: left;
 }

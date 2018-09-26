@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'upgrade-services-credit',
   templateUrl: './upgrade-services-credit.component.html',
   styles: [`
-
+    #accHistoryBtn {
+      margin: 5px 0;
+    }
   `]
 })
 export class UpgradeServicesCreditComponent {
