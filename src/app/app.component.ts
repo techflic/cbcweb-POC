@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
     <upgrade-services-credit></upgrade-services-credit>
     <after-login-footer></after-login-footer>
   `,
-  styles: [``]
+  styles: [`
+    
+  `]
 })
 export class AppComponent {
   
