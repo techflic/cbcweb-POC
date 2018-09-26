@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+}
+body {
+    font-size: .8em;
+}
+#inMain {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    bottom: 42px;
+    left: 0;
+    z-index: 0;
+    overflow: auto;
+    min-width: 825px;
+    display: block;
+}
+#toolbar {
+    display: block;
+    position: fixed;
+    left: 50%;
+    right: 0;
+    top: 119px;
+    margin: 0 auto 0 -513px;
+    max-width: 1012px;
+    z-index: 100;
+    border: 1px solid #000;
+    border-top: none;
+    padding: 5px;
+    background-color: #eee;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: right;
+    min-height: 50px;
+    box-shadow: 0 0 10px 1px #888
+}
+.breadCrumb {
+    width: 100%;
+    text-align: left;
+}
+.action-btns {
+    margin: 6px 0 0 4px;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.font-bold {
+    font-weight: 700;
+}
+.displayDiv {
+    display: block;
+    max-width: 1024px;
+    min-width: 500px !important;
+    margin: 70px auto;
+}
+.divHeader {
+    padding: .4em 1em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.divBody {
+    padding: .4em 1em;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.margin-muted {
+    margin: 0;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.client-info {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
