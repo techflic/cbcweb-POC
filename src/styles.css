@@ -92,16 +92,6 @@ body {
     padding-left: 0;
     list-style: none;
 }
-.client-info {
-    display: block;
-    width: 500px;
-    margin: 0 auto;
-}
-.services-section {
-    margin: 20px auto;
-    padding: 0 30px;
-    text-align: center;
-}
 .radio-box {
     width: 300px;
     float: left;
