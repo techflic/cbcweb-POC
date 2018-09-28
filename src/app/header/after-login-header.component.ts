@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'after-login-header',
-  template: `
-    <div id="header" class="ui-widget-header"><span>header</span></div>
-  `,
+  templateUrl:'./after-login-header.html' ,
   styles: [`
     #header {
       display: block;

@@ -21,7 +21,7 @@ body {
     position: fixed;
     left: 50%;
     right: 0;
-    top: 119px;
+    top: 97px;
     margin: 0 auto 0 -513px;
     max-width: 1012px;
     z-index: 100;
@@ -97,4 +97,7 @@ body {
     float: left;
     margin: 0 10px 20px;
     text-align: left;
+}
+.logoff-section{
+    margin-top:0;
 }

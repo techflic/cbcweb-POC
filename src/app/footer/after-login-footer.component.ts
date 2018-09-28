@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'after-login-footer',
   template: `
-  <div id="footer" class=""><span>footer</span></div>
+  <div id="footer" class=""><span>Copyright 2018 Accionlabs. All Rights Reserved</span></div>
   `,
   styles: [`
     #footer {
