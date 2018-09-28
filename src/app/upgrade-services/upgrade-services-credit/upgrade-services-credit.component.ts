@@ -21,21 +21,23 @@ import { FormGroup, FormControl } from "@angular/forms";
   `]
 })
 export class UpgradeServicesCreditComponent implements OnInit {
-  val = true
+  upgradeServicesCreditForm: FormGroup
+  service: FormControl
 
   constructor(){
     
   }
 
   ngOnInit(){
+    this.service = new FormControl('')
     
+    this.upgradeServicesCreditForm = new FormGroup({
+      service: this.service
+    })
   }
 
   serviceSelected(event){
-    console.log('selected service :', event)
-    setTimeout(function(){
-      
-    },1000)
+    console.log('selected service :', event.target.value)
   }
 
 }

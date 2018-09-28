@@ -1,5 +1,5 @@
 <section id="inMain" class="upgrade-services-credit">
-    <form>
+    <form [formGroup]="upgradeServicesCreditForm" autocomplete="off" >
     <!-- Toolbar -->
     <div id="toolbar" class="ui-corner-bottom">
         <!-- Breadcrumb -->
@@ -78,25 +78,25 @@
                     <ul class="list-unstyled margin-muted">
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="rmcr" name="rmcr" (change)="serviceSelected($event)">
+                                <input formControlName="service" type="radio" value="rmcr" (change)="serviceSelected($event)">
                                 <span>RMCR</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="infile" name="" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="infile" (click)="serviceSelected($event)">
                                 <span>Infile</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="mortgage" name="" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="mortgage" (click)="serviceSelected($event)">
                                 <span>Mortgage Only</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="creditXpert" name="" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="creditXpert" (click)="serviceSelected($event)">
                                 <span>CreditXpert</span>
                             </label>
                         </li>
@@ -112,19 +112,19 @@
                     <ul class="list-unstyled margin-muted">
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="deleteApplicant" (change)="serviceSelected($event)" >
                                 <span>Delete Applicant</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="addApplicant" (change)="serviceSelected($event)" >
                                 <span>Add Applicant</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="splitReport" (change)="serviceSelected($event)" >
                                 <span>Split Report</span>
                             </label>
                         </li>
@@ -140,37 +140,37 @@
                     <ul class="list-unstyled margin-muted">
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="deleteReport" (change)="serviceSelected($event)" >
                                 <span>Delete Report</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="addRemoveVendor" (change)="serviceSelected($event)" >
                                 <span>Add/Remove Vendor</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="referenceUpdate" (change)="serviceSelected($event)" >
                                 <span>Reference Update</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="uploadAuthDocs" (change)="serviceSelected($event)" >
                                 <span>Upload Auth/Docs</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="spanishAndEnglish" (change)="serviceSelected($event)" >
                                 <span>Spanish and English</span>
                             </label>
                         </li>
                         <li class="radio margin-muted">
                             <label>
-                                <input type="radio" class="" id="" name="" >
+                                <input formControlName="service" type="radio" value="addComments" (change)="serviceSelected($event)" >
                                 <span>Add Comments</span>
                             </label>
                         </li>
