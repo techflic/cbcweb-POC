@@ -113,6 +113,7 @@ export class UpgradeServicesCreditComponent implements OnInit {
     //open services modal
     event.srcElement.blur ()
     this.modalService.open(this.modal, {
+      backdropClass: 'backdropClass',
       ariaLabelledBy: 'modal-basic-title',
       size: 'lg',
       centered: true
@@ -123,5 +124,29 @@ export class UpgradeServicesCreditComponent implements OnInit {
       console.log(`Dismissed ${this.getDismissReason(reason)}`)
       this.service.reset()
     });
+  }
+}
+const servicesConfig = {
+  "rmcr": {
+    "title": "RMCR",
+    "widgetsId": ["uploadFormAcc", "RMCRRefUpdateAcc"],
+    "upgradeToKey": "infileToRmcr",
+    "submitValidation": ["uploadFormsValidate"]
+  },
+  "infile": {
+    "title": "Infile",
+    "widgetsId": ["aliasListAcc"],
+    "upgradeToKey": "upgradeToInfile"
+  },
+  "mortgageOnly": {
+    "title": "Mortgage Only",
+    "widgetsId": ["aliasListAcc"],
+    "upgradeToKey": "upgradeToMortgageOnly",
+  },
+  "creditXpert": {
+    "title": "CreditXpert&#153",
+    "widgetsId": ["creditXSelProdAcc", "creditXSelAppAcc", "appCreditXAcc", "CoCreditXAcc"],
+    "upgradeToKey": "upgradeToCX",
+    "submitValidation": ["creditXpertValidate"]
   }
 }
