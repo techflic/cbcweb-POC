@@ -3,20 +3,16 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'after-login-footer',
   template: `
-  <div id="footer" class=""><span>Copyright 2018 Accionlabs. All Rights Reserved</span></div>
+    <footer><span>Copyright 2018 Accionlabs. All Rights Reserved</span></footer>
   `,
   styles: [`
-    #footer {
-      display: block;
-      border-top: 2px solid #000;
-      background-color: #fff;
-      min-width: 800px;
-      font-size: 12px;
+    footer {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
       padding: 10px;
+      border-top: 2px solid #000;
       box-shadow: 0 0 10px 1px #888
     }
   `]

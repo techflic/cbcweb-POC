@@ -1,30 +1,30 @@
 <section id="inMain" class="upgrade-services-credit">
     <form [formGroup]="upgradeServicesCreditForm" autocomplete="off" >
     <!-- Toolbar -->
-    <div id="toolbar" class="ui-corner-bottom">
+    <div id="toolbar" class="list-inline floatRight">
         <!-- Breadcrumb -->
-        <div class="breadCrumb">
-            &#155; <span class="font-bold">Upgrade Services</span>
+        <div class="breadcrumb">
+            <span class="">Upgrade Services</span>
         </div>
-        <ul class="list-inline action-btns floatLeft">
-            <li class="checkbox">
+        <ul class="list-inline-item list-unstyled">
+            <li class="">
                 <label>
-                    <input type="checkbox" id="viewImmediately" value="" checked="checked" />View Immediately
+                    <input type="checkbox" class="" />View Immediately
                 </label>
             </li>
         </ul>
-        <button id="viewReport" class="ui-button ui-corner-all ui-widget btn ui-state-default ui-button-text-only" role="button" ><span class="ui-button-text">View Report</span></button>
-        <button id="viewReport" class="ui-button ui-corner-all ui-widget btn ui-state-default ui-button-text-only" role="button" ><span class="ui-button-text">Billing</span></button>
-        <button id="viewReport" class="ui-button ui-corner-all ui-widget btn ui-state-default ui-button-text-only" role="button" ><span class="ui-button-text">Submit</span></button>
+        <button class="" ><span>View Report</span></button>
+        <button class="" ><span>Billing</span></button>
+        <button class="" ><span>Submit</span></button>
     </div>
 
     <!-- Upgrade Services -->
     <div class="displayDiv">
         <!-- Client Info -->
         <div class="client-info">
-            <div class="divHeader ui-widget-header ui-corner-all">Client Information</div>
+            <div class="divHeader">Client Information</div>
             <div class="divBody clearfix">
-                <ul class="list-unstyled margin-muted">
+                <ul class="list-unstyled">
                     <li>
                         <label>Loan #:</label>
                         <span>WEB4_2017</span>
@@ -58,11 +58,11 @@
                         </div>
                     </li>
                     <li>
-                        <label class="font-bold">Reports odered for the Applicant:</label>
-                        <span class="font-bold">Janelle Luacommon</span>
+                        <label class="">Reports odered for the Applicant:</label>
+                        <span class="">Janelle Luacommon</span>
                     </li>
                     <li>
-                        <button id="accHistoryBtn" class="ui-button ui-corner-all ui-widget btn floatRight ui-state-default ui-button-text-only" role="button" ><span class="ui-button-text">Show Account History</span></button>
+                        <button id="accHistoryBtn" class="" ><span class="">Show Account History</span></button>
                     </li>
                 </ul>
             </div>
@@ -71,32 +71,32 @@
         <div class="services-section">
             <!-- Upgrade Services -->
             <div class="radio-box">
-                <div class="divHeader ui-widget-header ui-corner-all">
+                <div class="divHeader">
                     <span>Upgrade Services</span>
                 </div>
                 <div class="divBody">
-                    <ul class="list-unstyled margin-muted">
-                        <li class="radio margin-muted">
+                    <ul class="list-unstyled">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="rmcr" (change)="serviceSelected($event)">
                                 <span>RMCR</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
-                                <input formControlName="service"  type="radio" value="infile" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="infile" (change)="serviceSelected($event)">
                                 <span>Infile</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
-                                <input formControlName="service"  type="radio" value="mortgage" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="mortgage" (change)="serviceSelected($event)">
                                 <span>Mortgage Only</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
-                                <input formControlName="service"  type="radio" value="creditXpert" (click)="serviceSelected($event)">
+                                <input formControlName="service"  type="radio" value="creditXpert" (change)="serviceSelected($event)">
                                 <span>CreditXpert</span>
                             </label>
                         </li>
@@ -105,24 +105,24 @@
             </div>
             <!-- Applicant Services -->
             <div class="radio-box">
-                <div class="divHeader ui-widget-header ui-corner-all">
+                <div class="divHeader">
                     <span>Applicant Services</span>
                 </div>
                 <div class="divBody">
-                    <ul class="list-unstyled margin-muted">
-                        <li class="radio margin-muted">
+                    <ul class="list-unstyled">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="deleteApplicant" (change)="serviceSelected($event)" >
                                 <span>Delete Applicant</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="addApplicant" (change)="serviceSelected($event)" >
                                 <span>Add Applicant</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="splitReport" (change)="serviceSelected($event)" >
                                 <span>Split Report</span>
@@ -133,42 +133,42 @@
             </div>
             <!-- Other Services -->
             <div class="radio-box">
-                <div class="divHeader ui-widget-header ui-corner-all">
+                <div class="divHeader">
                     <span>Other Services</span>
                 </div>
                 <div class="divBody">
-                    <ul class="list-unstyled margin-muted">
-                        <li class="radio margin-muted">
+                    <ul class="list-unstyled">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="deleteReport" (change)="serviceSelected($event)" >
                                 <span>Delete Report</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="addRemoveVendor" (change)="serviceSelected($event)" >
                                 <span>Add/Remove Vendor</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="referenceUpdate" (change)="serviceSelected($event)" >
                                 <span>Reference Update</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="uploadAuthDocs" (change)="serviceSelected($event)" >
                                 <span>Upload Auth/Docs</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="spanishAndEnglish" (change)="serviceSelected($event)" >
                                 <span>Spanish and English</span>
                             </label>
                         </li>
-                        <li class="radio margin-muted">
+                        <li class="">
                             <label>
                                 <input formControlName="service" type="radio" value="addComments" (change)="serviceSelected($event)" >
                                 <span>Add Comments</span>
@@ -179,5 +179,19 @@
             </div>
         </div>
     </div>
+    <ng-template #modal let-modal>
+        <div class="modal-header">
+            <h6 class="modal-title">{{modalHeader}}</h6>
+            <button type="button" class="btn btn-xs" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Body
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-md" (click)="modal.close('Submit click')">Submit</button>
+        </div>
+    </ng-template>
     </form>
 </section>
