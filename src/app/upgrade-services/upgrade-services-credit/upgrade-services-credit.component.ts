@@ -22,18 +22,11 @@ import { NgbModal, NgbModalConfig, ModalDismissReasons } from '@ng-bootstrap/ng-
     }
     .divHeader {
       padding: .4em 1em;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
+      
     }
     .divBody {
       padding: .4em 1em;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
+      
     }
     .radio-box {
       width: 300px;
@@ -43,6 +36,14 @@ import { NgbModal, NgbModalConfig, ModalDismissReasons } from '@ng-bootstrap/ng-
     }
     .radio-box > .divBody {
       min-height: 220px;
+    }
+    .radio label {
+      min-height: 22px;
+      padding-left: 5px;
+      margin-bottom: 0;
+    }
+    .radio span {
+      margin-left: 5px;
     }
     #accHistoryBtn {
       margin: 5px 0;
@@ -59,6 +60,7 @@ import { NgbModal, NgbModalConfig, ModalDismissReasons } from '@ng-bootstrap/ng-
     }
     #toolbar {
       position: fixed;
+      z-index: 1;
       margin: 0;
       left: 12.5%;
       right: 12.5%;
@@ -67,6 +69,7 @@ import { NgbModal, NgbModalConfig, ModalDismissReasons } from '@ng-bootstrap/ng-
       border-top: none;
       padding: 5px;
       background-color: #eee;
+      box-shadow: 0 0 10px 1px #888;
     }
     .breadcrumb {
       margin: 0;
