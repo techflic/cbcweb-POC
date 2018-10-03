@@ -1,68 +1,70 @@
 <section id="inMain" class="upgrade-services-credit">
     <form [formGroup]="upgradeServicesCreditForm" autocomplete="off" >
     <!-- Toolbar -->
-    <div id="toolbar" class="list-inline floatRight">
+    <div id="toolbar" class="list-inline">
         <!-- Breadcrumb -->
         <div class="breadcrumb">
             <span class="">Upgrade Services</span>
         </div>
-        <ul class="list-inline-item list-unstyled">
+        <ul class="list-inline-item list-unstyled float-left" [ngStyle]="{'margin': '0'}">
             <li class="">
                 <label>
                     <input type="checkbox" class="" />View Immediately
                 </label>
             </li>
         </ul>
-        <button class="" ><span>View Report</span></button>
-        <button class="" ><span>Billing</span></button>
-        <button class="" ><span>Submit</span></button>
+        <ul class="list-inline-item list-unstyled float-right" [ngStyle]="{'margin': '0'}">
+                <button class="" ><span>View Report</span></button>
+                <button class="" ><span>Billing</span></button>
+                <button class="" ><span>Submit</span></button>
+        </ul>
     </div>
 
     <!-- Upgrade Services -->
     <div class="displayDiv">
         <!-- Client Info -->
-        <div class="client-info">
-            <div class="divHeader">Client Information</div>
-            <div class="divBody clearfix">
-                <ul class="list-unstyled">
+        <div class="client-info card bg-light mb-3">
+            <div class="divHeader card-header"><span class="card-title">Client Information</span></div>
+            <div class="divBody clearfix card-body">
+                <ul class="list-unstyled" [ngStyle]="{'line-height': 1}" >
                     <li>
                         <label>Loan #:</label>
-                        <span>WEB4_2017</span>
+                        <span>&nbsp;WEB4_2017</span>
                     </li>
                     <li>
                         <label>Requested By:</label>
-                        <span>vijay</span>
+                        <span>&nbsp;vijay</span>
                     </li>
                     <li>
                         <label>Product Type:</label>
-                        <span>infile</span>
+                        <span>&nbsp;infile</span>
                     </li>
                     <li class="clearfix">
-                        <div class="floatLeft">
+                        <div class="float-left">
                             <label>Applicant:</label>
-                            <span>Janelle Luacommon</span>
+                            <span>&nbsp;Janelle Luacommon</span>
                         </div>
-                        <div class="floatRight">
+                        <div class="float-right">
                             <label>SSN#:</label>
-                            <span>123456789</span>
+                            <span>&nbsp;123456789</span>
                         </div>
                     </li>
                     <li class="clearfix">
-                        <div class="floatLeft">
+                        <div class="float-left">
                             <label>Co-Applicant:</label>
-                            <span>Christa S Jracommon</span>
+                            <span>&nbsp;Christa S Jracommon</span>
                         </div>
-                        <div class="floatRight">
+                        <div class="float-right">
                             <label>SSN#:</label>
-                            <span>123456789</span>
+                            <span>&nbsp;123456789</span>
                         </div>
                     </li>
                     <li>
-                        <label class="">Reports odered for the Applicant:</label>
-                        <span class="">Janelle Luacommon</span>
+                        <label class="font-weight-bold">Reports odered for the Applicant:</label>
+                        <span class="">&nbsp;Janelle Luacommon</span>
                     </li>
                     <li>
-                        <button id="accHistoryBtn" class="" ><span class="">Show Account History</span></button>
+                        <button id="accHistoryBtn" class="float-right" ><span class="">Show Account History</span></button>
                     </li>
                 </ul>
             </div>
@@ -70,31 +72,31 @@
         <!-- Services Section -->
         <div class="services-section">
             <!-- Upgrade Services -->
-            <div class="radio-box">
-                <div class="divHeader">
-                    <span>Upgrade Services</span>
+            <div class="radio-box card bg-light mb-3">
+                <div class="divHeader card-header">
+                    <span class="card-title">Upgrade Services</span>
                 </div>
-                <div class="divBody">
+                <div class="divBody card-body">
                     <ul class="list-unstyled">
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="rmcr" (change)="serviceSelected($event)">
                                 <span>RMCR</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service"  type="radio" value="infile" (change)="serviceSelected($event)">
                                 <span>Infile</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service"  type="radio" value="mortgage" (change)="serviceSelected($event)">
                                 <span>Mortgage Only</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service"  type="radio" value="creditXpert" (change)="serviceSelected($event)">
                                 <span>CreditXpert</span>
@@ -104,25 +106,25 @@
                 </div>
             </div>
             <!-- Applicant Services -->
-            <div class="radio-box">
-                <div class="divHeader">
-                    <span>Applicant Services</span>
+            <div class="radio-box card bg-light mb-3">
+                <div class="divHeader card-header">
+                    <span class="card-title">Applicant Services</span>
                 </div>
-                <div class="divBody">
+                <div class="divBody card-body">
                     <ul class="list-unstyled">
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="deleteApplicant" (change)="serviceSelected($event)" >
                                 <span>Delete Applicant</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="addApplicant" (change)="serviceSelected($event)" >
                                 <span>Add Applicant</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="splitReport" (change)="serviceSelected($event)" >
                                 <span>Split Report</span>
@@ -132,43 +134,43 @@
                 </div>
             </div>
             <!-- Other Services -->
-            <div class="radio-box">
-                <div class="divHeader">
-                    <span>Other Services</span>
+            <div class="radio-box card bg-light mb-3">
+                <div class="divHeader card-header">
+                    <span class="card-title">Other Services</span>
                 </div>
-                <div class="divBody">
+                <div class="divBody card-body">
                     <ul class="list-unstyled">
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="deleteReport" (change)="serviceSelected($event)" >
                                 <span>Delete Report</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="addRemoveVendor" (change)="serviceSelected($event)" >
                                 <span>Add/Remove Vendor</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="referenceUpdate" (change)="serviceSelected($event)" >
                                 <span>Reference Update</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="uploadAuthDocs" (change)="serviceSelected($event)" >
                                 <span>Upload Auth/Docs</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="spanishAndEnglish" (change)="serviceSelected($event)" >
                                 <span>Spanish and English</span>
                             </label>
                         </li>
-                        <li class="">
+                        <li class="radio">
                             <label>
                                 <input formControlName="service" type="radio" value="addComments" (change)="serviceSelected($event)" >
                                 <span>Add Comments</span>
