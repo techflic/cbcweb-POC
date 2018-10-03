@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { UpgradeServicesCreditComponent } from './upgrade-services/upgrade-services-credit/upgrade-services-credit.component';
 import { AfterLoginHeaderComponent } from "./header/after-login-header.component";
 import { AfterLoginFooterComponent } from "./footer/after-login-footer.component";
+import { RequestorDetailsComponent } from './requestor-details/requestor-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UpgradeServicesCreditComponent,
     AfterLoginHeaderComponent,
-    AfterLoginFooterComponent
+    AfterLoginFooterComponent,
+    RequestorDetailsComponent
   ],
   imports: [
     BrowserModule,

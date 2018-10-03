@@ -1,55 +1,68 @@
-<header id="header" class="ui-widget-header">
-    <div class="clearfix">
-      <a href="#" class="logo floatLeft">
-        <img src="./assets/images/accion-logo.png" style="max-height:50px; margin-top:10px">
-      </a>  
-      <ul class="list-unstyled logoff-section floatRight text-right">
+<header id="header">
+    <div class="inline"> 
+        <a href="#" class="list-inline-item logo floatLeft">
+            <img src="./assets/images/accion-logo.png" style="max-height:40px; margin-top:20px">
+        </a>  
+        <ul class="list-unstyled logoff-section list-inline-item float-right text-right">
           <li class="utilityMenu">
-              <button id="contactUs" class="ui-button ui-corner-bl ui-widget btn ui-state-default ui-button-text-icon-primary">
-                  <span class="ui-button-text">Contact Us</span>
+              <button id="contactUs" class="btn btn-sm border border-light ">
+                  <span>Contact Us</span>
               </button>
-              <button id="logOff" class="ui-button ui-corner-br ui-widget btn ui-state-default ui-button-text-icon-primary" >
-                  <span class="ui-button-text">Log Off</span>
+              <button id="logOff" class="btn btn-sm border border-light" >
+                  <span>Log Off</span>
               </button>
           </li>
           
-          <li class="floatRight">Login ID: Client</li>
-          <li><br></li>
-          <li class="floatRight">
-            Click <a href="#" >here </a> to change password 
+          <li>Login ID: Client</li>
+          <li>
+            Click <a href="#" > here </a> to change password 
           </li>
-
-
-      </ul>
+        </ul>
     </div>
     
-      <ul id="mainMenu" class="ui-menu floatLeft ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0">
+    <div class="navMenu">
+        <div class="dropdown" style="float:left;">
+            <button class="dropbtn btn btn-sm border border-light rounded-top" id="entryFormBtn">Entry Form <span class="glyphicon glyphicon-chevron-right"></span></button>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">Customize Entry Form</a>
+              </div>
+        </div>
           
-            <li class="ui-button ui-corner-tl ui-corner-tr ui-widget ui-state-default ui-menu-item" id="header-entryForm" role="presentation">
-                <a aria-haspopup="true" id="ui-id-2" class="ui-corner-all" role="menuitem">
-                <span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>
-                Entry Form</a>
-            </li>
-            <li class="ui-button ui-corner-tl ui-corner-tr ui-widget ui-state-default ui-menu-item" id="header-entryForm" role="presentation">
-                <a aria-haspopup="true" id="ui-id-2" class="ui-corner-all" role="menuitem">
-                <span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>
-                Report Status</a>
-            </li>
-            <li class="ui-button ui-corner-tl ui-corner-tr ui-widget ui-state-default ui-menu-item" id="header-entryForm" role="presentation">
-                <a aria-haspopup="true" id="ui-id-2" class="ui-corner-all" role="menuitem">
-                <span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>
-                Administration</a>
-            </li>
-            <li class="ui-button ui-corner-tl ui-corner-tr ui-widget ui-state-default ui-menu-item" id="header-entryForm" role="presentation">
-                <a aria-haspopup="true" id="ui-id-2" class="ui-corner-all" role="menuitem">
-                <span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>
-                Services</a>
-            </li>
-            <li class="ui-button ui-corner-tl ui-corner-tr ui-widget ui-state-default ui-menu-item" id="header-entryForm" role="presentation">
-                <a aria-haspopup="true" id="ui-id-2" class="ui-corner-all" role="menuitem">
-                <span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span>
-                Training Resources</a>
-            </li>
-        </ul>
-    
+        <div class="dropdown" style="float:left;">
+            <button class="dropbtn btn btn-sm border border-light rounded-top" >Report Status<span class="glyphicon glyphicon-chevron-right"></span></button>
+            <div class="dropdown-content">
+              <a href="#">Completed orders</a>
+              <a href="#">Pending orders</a>
+              <a href="#">Required orders</a>
+            </div>
+        </div>
+
+        <div class="dropdown" style="float:left;">
+                <button class="dropbtn btn btn-sm border border-light rounded-top">Administration<span class="glyphicon glyphicon-chevron-right"></span></button>
+                <div class="dropdown-content">
+                  <a href="#">Defaults</a>
+                  <a href="#">Customize Entry Form</a>
+                  <a href="#">Admin Reports</a>
+                  <a href="#">Custom Letter Maintenance</a>
+                </div>
+        </div>
+        
+
+        <div class="dropdown" style="float:left;">
+                <button class="dropbtn btn btn-sm border border-light rounded-top">services<span class="glyphicon glyphicon-chevron-right"></span></button>
+                <div class="dropdown-content">
+                  <a href="#">Upgrade Services</a>
+                  <a href="#">Delete Report</a>
+                </div>
+        </div>
+          
+
+        <div class="dropdown" style="float:left;">
+                <button class="dropbtn btn btn-sm border border-light rounded-top">Training Resources<span class="glyphicon glyphicon-chevron-right"></span></button>
+                <div class="dropdown-content">
+                  <a href="#">How to Read an RPC report</a>
+                  <a href="#">Hoe tp read a Flood Report</a>
+                </div>
+        </div>
+    </div>        
   </header>
