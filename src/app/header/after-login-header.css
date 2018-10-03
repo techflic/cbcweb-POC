@@ -52,6 +52,9 @@ header {
 .navMenu{
     margin-top:25px;
 }
+#header{
+    z-index: 2;
+}
 
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
